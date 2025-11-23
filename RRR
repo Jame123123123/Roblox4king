@@ -1,0 +1,44 @@
+-- โหลด Rayfield GUI
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local player = game.Players.LocalPlayer
+local char = player.Character or player.CharacterAdded:Wait()
+local hrp = char:WaitForChild("HumanoidRootPart")
+-- 🌐 GUI
+local Window = Rayfield:CreateWindow({
+   Name = "SEADUM HUB",
+   LoadingTitle = "SEADUM Dev",
+   LoadingSubtitle = "By SEADUM",
+   Theme = "Default",
+})
+
+Rayfield:Notify({
+   Title = "SEADUM HUB",
+   Content = "SEADUM โหลดแล้ว!",
+   Duration = 4,
+   Image = 4483362458,
+})
+
+local Tab = Window:CreateTab("TP", 4483362458)
+
+local Button = Tab:CreateButton({
+   Name = "C4 Fast HoldDuration ",
+   Callback = function()
+		  workspace.Box3.ProximityPrompt.HoldDuration = 0 
+   end,
+})
+
+-- ปุ่มดึงทั้งหมด
+local Button = Tab:CreateButton({
+   Name = "TP C4",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(356.639496, 11.9060154, 111.457466, -0.000121951103, 0.00054927927, 0.999999762, -0.00115970499, 0.999999166, -0.000549420307, -0.999999285, -0.00115977181, -0.000121355057)
+       
+   end,
+})
+
+local Button = Tab:CreateButton({
+   Name = "C4 POINT",
+   Callback = function()
+      game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1889.48889, 1.43025041, 854.83844, -0.097830534, -6.39549617e-05, 0.995203078, -6.39549617e-05, 1, 5.79763146e-05, -0.995203078, -5.79763146e-05, -0.097830534)
+   end,
+})
